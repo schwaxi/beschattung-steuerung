@@ -1,4 +1,4 @@
-// beschattung-steuerung v1.0.0
+// beschattung-steuerung v1.0.1
 // Einzeln installierbares Modul (Home Assistant Marketplace / HACS, Kategorie Dashboard).
 window.customCards = window.customCards || [];
 window.customCardFeatures = window.customCardFeatures || [];
@@ -47,6 +47,8 @@ class BeschattungSteuerung extends HTMLElement {
           --control-button-group-spacing: var(--beschattung-tasten-abstand, 12px);
           --control-button-group-thickness: var(--feature-height, 42px);
           height: var(--feature-height, 42px);
+          max-width: var(--beschattung-tasten-max-breite, none);
+          margin-left: auto;
         }
         ha-control-button {
           --control-button-border-radius: var(--feature-border-radius, 12px);
@@ -123,4 +125,4 @@ if (!window.customCardFeatures.some((f) => f.type === TYPE2)) {
 }
 }
 
-console.info("%c beschattung-steuerung %c v1.0.0 ", "color:#fff;background:#03a9f4;font-weight:700", "color:#03a9f4");
+console.info("%c beschattung-steuerung %c v1.0.1 ", "color:#fff;background:#03a9f4;font-weight:700", "color:#03a9f4");
